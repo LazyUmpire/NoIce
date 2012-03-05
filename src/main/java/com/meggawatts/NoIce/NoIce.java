@@ -1,0 +1,23 @@
+package main.java.com.meggawatts.NoIce;
+
+import java.util.logging.Logger;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class NoIce extends JavaPlugin {
+
+    public static final Logger log = Logger.getLogger("Minecraft");
+
+    @Override
+    public void onEnable() {
+        getServer().getPluginManager().registerEvents(new NoIceBlockListener(), this);
+        PluginDescriptionFile pdfFile = this.getDescription();
+        getServer().getLogger().info(pdfFile.getName() + " version " + pdfFile.getVersion() + " is enabled!");;
+    }
+
+    @Override
+    public void onDisable() {
+        PluginDescriptionFile pdfFile = this.getDescription();
+        getServer().getLogger().info(pdfFile.getName() + " version " + pdfFile.getVersion() + " is disabled!");
+    }
+}

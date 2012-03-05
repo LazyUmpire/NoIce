@@ -1,0 +1,7 @@
+name: NoIce
+main: main.java.com.meggawatts.NoIce.NoIce
+version: 1.5
+description: Stop that pesky Ice!
+website: http://dev.bukkit.org/server-mods/noice/
+authors:
+  - meggawatts
