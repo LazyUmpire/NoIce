@@ -12,7 +12,7 @@ public class NoIceBlockListener implements Listener {
         if (event.isCancelled()) {
             return;
         }
-        if (event.getNewState().getTypeId() == 79) {
+        if (event.getNewState().getType().equals(Material.ICE)) {
             event.setCancelled(true);
             return;
         }
