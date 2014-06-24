@@ -1,7 +1,6 @@
 package main.java.com.meggawatts.NoIce;
 
 import java.util.logging.Logger;
-import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class NoIce extends JavaPlugin {
